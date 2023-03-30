@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto; */
-    background-color: #a2d2ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,79 +19,10 @@
 }
 
 .header h1 {
-    color: #000000;
+    color: #FFFFFF;
 }
 
-.main {
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo img {
-    width: 15rem;
-}
-
-.login__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.login__form h2 {
-    margin-top: 1rem;
-}
-
-.login__form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.login__form form input {
-    height: 1.7rem;
-    width: 12rem;
-    padding-left: 8px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid #d2d2d2;
-    outline: 0;
-}
-
-
-.login__form form button {
-    width: 5rem;
-    height: 2rem;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #a2d2ff;
-    border: 2px solid #a2d2ff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.login__form form button:hover {
-    background-color: #bde0fe;
-}
-
-.login__form p {
-    font-size: 16px ;
-}
-
-.login__form p a {
-    color: #000000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.login__form p a:hover {
-    color: #828282;
-} 
+/******************************************************************/
 
 .footer {
     width: 100%;
@@ -137,11 +67,6 @@
     .header {
         padding-left: 3rem;
         align-items: flex-start;
-    }
-
-    .login__form form input {
-        height: 2rem;
-        width: 15rem;
     }
 }
 
