@@ -7,7 +7,7 @@
 }
 
 .header {
-    height: 4rem;
+    height: 5rem;
     /* background-image: url(../assets/header.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -18,8 +18,8 @@
     flex-direction: column;
 }
 
-.header h1 {
-    color: #FFFFFF;
+.header img {
+    width: 14rem;
 }
 
 /******************************************************************/

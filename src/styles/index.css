@@ -1,170 +1,361 @@
-* {
-    font-family: "Roboto";
-    font-weight: 400;
-    padding: 0;
+*{
     margin: 0;
-    list-style-type: none;
+    padding: 0;
 }
 
-.header {
-    height: 4rem;
-    /* background-image: url(../assets/header.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto; */
-    background-color: #a2d2ff;
+/*body do cadastro*/
+#cad {
+    background-color: #ffffff;
+}
+
+/*index*/
+/*Navbar*/
+#cabecalho {
+    display: flex;
+    align-items: center;
+    background: rgb(6, 102, 10);
+    height: 15vh;
+}
+
+#cabecalho .navbar-container {
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 5vw;
+    padding: 20px 0;
+}
+
+#cabecalho .navbar-container img {
+	width: 17vw;
+	margin-left: 1vw;
+}
+
+/*Main*/
+#main_index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Logo do Ocean Splash no index*/
+#main_index #sec1 #img1 {
+    margin-top: 15vh;
+    border-radius: 10%;
+    width: 350px;
+}
+
+/*Botões para servico online/presencial*/
+#main_index .agendamento {
+    background-color: rgb(0, 119, 6);
+	justify-content: center;
+    border: none;
+    padding: 1vw;
+    color: white;
+	border-radius: 10vw;
+	font-size: 25px;
+    cursor: pointer;
+	margin-top: 2vh;
+}
+
+#main_index .agendamento:hover {
+    transition: 500ms ease-in-out;
+    color: #ffab0e;
+	cursor: pointer;
+}
+
+/*Footer*/
+#footer {
+	background: rgb(6, 102, 10);
+	color: white;
+	padding: 4vh 0;
+	margin-top: 7vh;
+}
+
+#footer .footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60vw;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#footer .footer-content .footer-menu {
+	margin: 1vh 4vw;
+	list-style: none;
+}
+
+#footer .footer-content .footer-menu .titulos-footer {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffab0e;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item {
+	margin: 1vw 0;
+    cursor: pointer;
+	font-size: 1rem;
+	
+}
+
+/*Footer Info*/
+.footer-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 55vw;
+	margin: 0 22.5vw;
+	font-weight: bold;
+	color: #ffab0e;
+	font-size: 0.9rem;
+	padding-top: 3vh;
+}
+
+.footer-info .footer-info-items {
+	display: flex;
+	list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+    margin: 1.5vh 1.5vw;
+	cursor: pointer;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+    transition: all 500ms ease;
+	color: #ffab0e;
+	cursor: pointer;
+}
+
+.footer-info .icones .country {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 1vw;
+}
+
+.footer-info .icones .country {
+    cursor: pointer;
+}
+
+.footer-info .icones .country .brazil-flag {
+	height: 2vh;
+	width: auto;
+	display: inline-block;
+	margin-left: 0.5vw;
+}
+
+/*Cadastro*/
+.cadastro {
+	width: 35vw;
+	margin-top: 100px;
+    margin-left: 27vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding: 6rem;
+    background-color: #fff;
+    box-shadow: 2vw 3vh rgba(6, 6, 6, 0.141);
 }
 
-.header h1 {
-    color: #000000;
-}
-
-.main {
-    height: 30rem;
+.cadastro-cabeçalho {
+    margin-bottom: 3rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.logo img {
-    width: 15rem;
+.title {
+    font-size: 1.5rem;
 }
 
-.login__form {
+/*Dados do usuário*/
+.input-group {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.login__form h2 {
-    margin-top: 1rem;
-}
-
-.login__form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.login__form form input {
-    height: 1.7rem;
-    width: 12rem;
-    padding-left: 8px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid #d2d2d2;
-    outline: 0;
-}
-
-
-.login__form form button {
-    width: 5rem;
-    height: 2rem;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #a2d2ff;
-    border: 2px solid #a2d2ff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.login__form form button:hover {
-    background-color: #bde0fe;
-}
-
-.login__form p {
-    font-size: 16px ;
-}
-
-.login__form p a {
-    color: #000000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.login__form p a:hover {
-    color: #828282;
-} 
-
-.footer {
-    width: 100%;
-    height: 6rem;
-    padding: 1rem 0rem;
-    background-color: #333333;
-    color: #E0E0E0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer__infos {
-    margin-bottom: 2rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.footer__infos li a {
-    color: #E0E0E0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.footer__infos li a:hover {
-    color: #828282;
-}
-
-.footer p {
-    font-size: 16px;
-    display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box-file {
+    display: flex;
     flex-direction: column;
+    margin-bottom: 1.1rem;
+
+}
+
+.input-box-file input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box-age {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box-age input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 2.7rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input #age-student{
+    margin: 0.6rem 0;
+    padding: 15rem 5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+
+}
+
+.input-box select{
+    margin: 0.6rem 0;
+    padding: 0.8rem 0.7rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box-age input:focus-visible {
+    outline: 2px solid rgb(0, 119, 6);
+}
+
+.input-box input:focus-visible {
+    outline: 2px solid rgb(0, 119, 6);
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+	font-size: 0.75rem;
+}
+
+/*Dados do gênero do usuário*/
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-title h6 {
+    font-size: 1.5rem;
+}
+
+.gender-input {
+    display: flex;
     align-items: center;
 }
 
-.footer p span {
-    font-size: 14px;
+.gender-input input {
+    margin-right: 0.35rem;
 }
 
-@media (min-width: 600px) {
-    .header {
-        padding-left: 3rem;
-        align-items: flex-start;
-    }
-
-    .login__form form input {
-        height: 2rem;
-        width: 15rem;
-    }
+.gender-input label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+    cursor: pointer;
 }
 
-@media (min-height: 670px) {
-    .footer {
-        position: fixed;
-        bottom: 0;
-    }
+/*Dados de PcD do usuário*/
+.deficiencia-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.62rem;
+    padding: 0 .4rem;
 }
 
-@media (min-width: 730px) {
+.deficiencia-title h6 {
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
 
-    .footer {
-        flex-direction: row;
-        justify-content: center;
-        gap: 5rem;
+.deficiencia-input label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: rgb(0, 119, 6);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: rgb(1, 93, 6);
+}
+
+.continue-button button {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*Dados do cadastro*/
+@media screen and (max-width: 1064px) {
+    
+    .cadastro {
+        width: auto;
+        margin-left: 0.1vw;
     }
 
-    .footer__infos {
-        margin-bottom: 0;
+    .input-group{
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
     }
 
-    .footer p {
-        display: block;
+    .gender-inputs {
+        margin-top: 2rem;
     }
-} 
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}

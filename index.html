@@ -1,50 +1,104 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./src/styles/index.css">
-        <title>Ocean Splash</title>
-    </head>
-    <body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/styles/index.css">
+    <script src="script.js"></script>
+    <title>Bem vindos a Ocean Splash!</title>
+</head>
+<body>
 
-        <header class="header">
-            <h1>Ocean Splash</h1>
-        </header>
 
-        <main class="main">
-            <div class="logo">
-                <img src="./src/assets/logo.png" alt="logo">
-            </div>
+<!--Cabeçalho-->
+<!--Navbar-->
+<navbar id="cabecalho">
+	<h1 style="color:gold;" align="center">Ocean Splash</h1>
+    <div class="navbar-container">
+    </div>
+</navbar>
 
-            <div class="login__form">
-                <h2>Login</h2>
-                <form>
-                    <input type="email" name="login" id="login" placeholder="E-mail" />
-                    <input type="password" name="password" id="password" placeholder="Senha" />
-                    <button type="submit">Entrar</button>
-                </form>
-                <p>Não possui login?</p>
-                <p><a href="./pages/signup.html">Cadastre aqui!</a></p>
-            </div>
 
-        </main>
+<!--Showcase do site-->
+<!--Main-->    
+<main id="main_index">
+    <!--Logo Ocean Splash-->
+    <section id="sec1">
+            <img src="C:\Users\Tatiane\OneDrive\Área de Trabalho\MACKENZIE\Faculdade\PI\Site PI\img\logo.jpeg" alt="Imagem inicial" id="img1">
+    </section>
+      <!--Botão para realizar servico/Leva-->
+      <id="online">
+        <a href="servico_leva_traz.html">
+            <input type="button" value="Serviço leva e traz" class="agendamento">
+		</a>
+   
+		<!--Botão para servico presencial-->
+    <id="presencial">
+        <a href="servico_presencial.html">
+            <input type="button" value="Serviço presencial" class="agendamento">
+        </a>
+</main>
 
-        <footer class="footer">
-            <ul class="footer__infos">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
 
-            <p>&copy;2023 Ocean Splash | <span>Todos os direitos reservados.</span></p>
-        </footer>
+<!--Rodapé-->
+<!--Footer-->
+<footer id="footer">
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <p class="titulos-footer">Institucional</p>
+            <li class="footer-menu-item">
+                Conselho
+            </li>
+            <li class="footer-menu-item">
+                Relatório de Atividades
+            </li>
+            <li class="footer-menu-item">
+                Atos Institucionais
+            </li>
+        </ul>
+
+        <ul class="footer-menu">
+            <p class="titulos-footer">Contatos</p>
+            <li class="footer-menu-item">
+                Nossos Contatos 
+            </li>
+            <li class="footer-menu-item">
+                Redes Sociais
+            </li>
+            <li class="footer-menu-item">
+                Trabalhe Conosco
+            </li>
+        </ul>
+
+        <ul class="footer-menu">
+            <p class="titulos-footer">Sobre</p>
+            <li class="footer-menu-item">
+                Quem Somos
+            </li>
+            <li class="footer-menu-item">
+                Desenvolvedores
+            </li>
+            <li class="footer-menu-item">
+                Objetivo do Software
+            </li>
+        </ul>
+    </div>
+    
+<!--Footer-info-->
+    <class="footer-info">
+        <class="footer-info-items">
+            <class="footer-info-item">Política de privacidade       
+
+        <class="icones">
+            <class="country">
+                <class="titulos-footer">
+                
+            
+            <p>&copy; Ocean Splash 2023 - Brasil</p>
         
-        <script src="./src/js/index.js"></script>
-    </body>
+    
+</footer>
+</body>
 </html>
+
