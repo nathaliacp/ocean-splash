@@ -6,14 +6,11 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    text-decoration: none;
 }
 
 .header {
     height: 5rem;
-    /* background-image: url(../assets/header.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto; */
     background-color: #a2d2ff;
     display: flex;
     justify-content: center;
@@ -25,52 +22,56 @@
     width: 14rem;
 }
 
-.main {
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+main {
+    padding: 1rem;
 }
 
-.logo img {
-    width: 15rem;
+h1 {
+    margin-bottom: 1rem;
 }
 
-.login__form {
+.about__us {
+    display: flex;
+    flex-direction: row;
+}
+
+.about__us p {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-right: 4rem;
+}
+
+.about__us__img img {
+    height: 210px;
+    width: 460px;
+    -webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.services {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
 }
 
-.login__form h2 {
-    margin-top: 1rem;
+.services ul {
+    padding-left: 2rem;
 }
 
-.login__form form {
+.services ul li{
+    list-style-type: initial;
+}
+
+.request__btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
-.login__form form input {
-    height: 1.7rem;
-    width: 12rem;
-    padding-left: 8px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid #d2d2d2;
-    outline: 0;
-}
-
-
-.login__form form button {
-    width: 5rem;
-    height: 2rem;
-    color: #000000;
-    font-size: 16px;
+.request__btn button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.3rem;
     font-weight: 500;
     background-color: #a2d2ff;
     border: 2px solid #a2d2ff;
@@ -78,23 +79,13 @@
     cursor: pointer;
 }
 
-.login__form form button:hover {
+.request__btn button:hover {
     background-color: #bde0fe;
 }
 
-.login__form p {
-    font-size: 16px ;
-}
-
-.login__form p a {
+.request__btn button a {
     color: #000000;
-    text-decoration: none;
-    cursor: pointer;
 }
-
-.login__form p a:hover {
-    color: #828282;
-} 
 
 .footer {
     width: 100%;
@@ -105,6 +96,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer__infos {
@@ -139,11 +132,6 @@
     .header {
         padding-left: 3rem;
         align-items: flex-start;
-    }
-
-    .login__form form input {
-        height: 2rem;
-        width: 15rem;
     }
 }
 

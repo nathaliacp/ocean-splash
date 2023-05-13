@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     font-family: "Roboto";
     font-weight: 400;
@@ -25,13 +27,25 @@ main {
 }
 
 h1 {
+    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
 .about__us {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
+}
+
+.about__us p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.about__us__img img {
+    height: 200px;
+    width: 530px;
+    -webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 .services {
@@ -56,9 +70,9 @@ h1 {
 }
 
 .request__btn button {
-    width: 8rem;
+    width: 9rem;
     height: 3rem;
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 500;
     background-color: #a2d2ff;
     border: 2px solid #a2d2ff;
@@ -83,6 +97,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer__infos {

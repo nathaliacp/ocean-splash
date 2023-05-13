@@ -18,65 +18,78 @@
         </header>
 
         <main>
-            <div class="about">
-                <div>
+            <div class="about__services">
+                <div class="services">
                     <h2>Serviço Presencial</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in faucibus est. 
-                        Phasellus a dignissim urna, at feugiat nibh. Ut diam elit, elementum in tellus ac, 
-                        suscipit feugiat mi. Suspendisse vitae justo sit amet ipsum sodales volutpat. Nullam 
-                        urna ipsum, malesuada non posuere vitae, fringilla eget ligula.
+                        Serviço disponível para você trazer seu veículo e tomar uma café conosco!
+                        Temos wifi, lanchonete e sala com tv para se descontrair enquanto aguarda.
+                        Lembrando, após a confirmação do agendamento você possui a tolerancia de 10
+                        minutos para ser feito o check in do veículo conosco.
                     </p>
                 </div>
 
-                <div>
+                <div class="services">
                     <h2>Serviço Leva e Traz</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in faucibus est. 
-                        Phasellus a dignissim urna, at feugiat nibh. Ut diam elit, elementum in tellus ac, 
-                        suscipit feugiat mi. Suspendisse vitae justo sit amet ipsum sodales volutpat. Nullam 
-                        urna ipsum, malesuada non posuere vitae, fringilla eget ligula.
+                        Serviço disponível para você ter melhor comodidade e tempo para 
+                        outras tarefas ou até mesmo seu hobby. Este serviço é fornecido 
+                        somente para os bairros próximos com até 2KM de distância entre
+                        a empresa e a localidade do cliente - veículo.
                     </p>
                 </div>
             </div>
                 
             <div class="request__form">
-                <h3>Solicitar serviço</h3>
-                
+                                
                 <form id="form">
                     <fieldset class="service__type">
-                        <legend>Informe o tipo de serviço:</legend>
-                        <div>
-                            <input type="radio" name="service__type" id="presencial" value="Presencial"/>
-                            <label for="presencial">Presencial</label>
+                        <legend>Agendamento e Serviço</legend>
+                        <div class="inputs">
+                            <label for="service-sched">Agendamento</label>
+                            <select name="service-sched" id="service-sched">
+                                <option value="None"></option>
+                                <option value="in person">Presencial</option>
+                                <option value="take and bring">Leva e Traz</option>
+                            </select>
                         </div>
-                        <div>
-                            <input type="radio" name="service__type" id="levaETraz" value="Leva e traz"/>
-                            <label for="levaETraz">Cartão de crédito</label>
+                        
+                        <div class="inputs">
+                            <label for="service-type">Serviço</label>
+                            <select name="service-type" id="service-type">
+                                <option value="None"></option>
+                                <option value="simples">Lavagem Simples</option>
+                                <option value="completo">Lavagem Completa</option>
+                                <option value="impermeabilização">Lavagem Completa com Impermebialização</option>
+                                <option value="cristalização">Lavagem Completa com Cristalização</option>
+                            </select>
                         </div>
+                    
+                        <div class="inputs">
+                            <label for="service-price">Total a ser pago:</label>
+                            <p id="service-price">R$0</p>
+                        </div>
+                        
+
                     </fieldset>
+
                     <fieldset class="personal__info">
                         <legend>Informações Pessoais</legend>
-                        <div class="inputs">
-                            <label for="cpf">CPF</label>
-                            <input type="number" id="cpf" maxlength="11" />
-                        </div>
-    
                         <div class="inputs">
                             <label for="name">Nome</label>
                             <input type="text" id="name"  />
                         </div>
     
                         <div class="inputs">
-                            <label for="date">Data de Nascimento</label>
-                            <input type="date" id="date"  />
+                            <label for="cpf">CPF</label>
+                            <input type="number" id="cpf" maxlength="11" />
                         </div>
     
                         <div class="inputs">
-                            <label for="cnh">CNH</label>
-                            <input type="number" id="cnh" maxlength="15"/>
+                            <label for="date">Data de Nascimento</label>
+                            <input type="date" id="date"  />
                         </div>
-    
+                                                
                         <div class="inputs">
                             <label for="phone">Telefone</label>
                             <input type="number" id="phone" maxlength="13"/>
@@ -92,6 +105,8 @@
                             <select name="address-type" id="address-type">
                                 <option value="street">Rua</option>
                                 <option value="avenue">Avenida</option>
+                                <option value="square">Praça</option>
+                                <option value="platter">Travessa</option>
                             </select>
                         </div>
 
@@ -149,64 +164,33 @@
                             <label for="vehicle-color">Cor</label>
                             <input type="text" id="vehicle-color"  />
                         </div>
-    
-                        <div class="inputs">
-                            <label for="vehicle-size">Tamanho</label>
-                            <input type="text" id="vehicle-size"  />
-                        </div>
-    
+                              
                         <div class="inputs">
                             <label for="vehicle-license">Placa</label>
                             <input type="text" id="vehicle-license"  />
-                        </div>
+                        </div>               
                     </fieldset>
-
-
-                    <fieldset class="payment">
-                        <legend>
-                            Selecione o tipo de pagamento:
-                        </legend>
-
-                        <p>
-                            Total: 
-                            <span>R$120,00</span>
-                        </p>
-
-                        <div>
-                            <input type="radio" name="payment" id="pix" value="Pix"/>
-                            <label for="pix">Pix</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="payment" id="dinheiro" value="Dinheiro"/>
-                            <label for="dinheiro">Dinheiro</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="payment" id="cartaoDebito" value="Cartão de débito"/>
-                            <label for="cartaoDebito">Cartão de débito</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="payment" id="cartaoCredito" value="Cartão de crédito"/>
-                            <label for="cartaoCredito">Cartão de crédito</label>
-                        </div>
-                    </fieldset>
-
-
-                    <button type="submit" class="submit__button">Enviar</button>
                 </form>
             </div>
             
+            <button type="submit" class="submit__button" id="submitBtn">Enviar</button>
+
+            <div class="open__modal" id="openModal"></div>
+              
         </main>
 
         <footer class="footer">
             <ul class="footer__infos">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="./sobre_nos.html">Sobre Nós</a></li>
                 <li><a href="./servicos.html">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
 
             <p>&copy;2023 Ocean Splash | <span>Todos os direitos reservados.</span></p>
         </footer>
+
+        <script src="../src/js/servicos.js"></script>
     </body>
 
 </html>
